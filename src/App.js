@@ -16,6 +16,9 @@ class App extends React.Component {
     }
     this.checkAndUpdate = this.checkAndUpdate.bind(this);
   }
+  handleClick() {
+    this.setState({currIndex: 0})
+  }
   checkAndUpdate(name) {
     this.setState(prevState => ({
       correctAns: name===tirthankar[tirthIndex[prevState.currIndex]] ? prevState.correctAns+1: prevState.correctAns,
@@ -59,6 +62,7 @@ class App extends React.Component {
       <div className="center">
             <h1>{message}</h1>
             <h2>Your got <span style={{color: "#276127"}}> {correctAns} correct</span> answers.</h2>
+            <button className="retry" onClick={this.handleClick}>Retry</button>
       </div>
     )
   }

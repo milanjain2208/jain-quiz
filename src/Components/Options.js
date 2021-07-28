@@ -15,16 +15,16 @@ class Options extends React.Component{
         return <>
             <div className="flex-container">
                 <div className="flex-item">
-                    <button onClick={this.handleClick} style={{backgroundColor: selected?(currTirth===option[0]?"#95E8A3":"#fb7070"):"white", color: selected?(currTirth===option[0]?"#276127":"#962424"):"black"}} disabled={selected}><h1>{option[0]}</h1></button>
+                    <button onClick={this.handleClick} style={{backgroundColor: selected && (currTirth===option[0]?"#95E8A3":"#fb7070"), color: selected && (currTirth===option[0]?"#276127":"#962424")}} disabled={selected}><h1>{option[0]}</h1></button>
                 </div>
                 <div className="flex-item">
-                    <button onClick={this.handleClick} style={{backgroundColor: selected?(currTirth===option[1]?"#95E8A3":"#fb7070"):"white", color: selected?(currTirth===option[1]?"#276127":"#962424"):"black"}} disabled={selected}><h1>{option[1]}</h1></button>
+                    <button onClick={this.handleClick} style={{backgroundColor: selected && (currTirth===option[1]?"#95E8A3":"#fb7070"), color: selected && (currTirth===option[1]?"#276127":"#962424")}} disabled={selected}><h1>{option[1]}</h1></button>
                 </div>
                 <div className="flex-item">
-                    <button onClick={this.handleClick} style={{backgroundColor: selected?(currTirth===option[2]?"#95E8A3":"#fb7070"):"white", color: selected?(currTirth===option[2]?"#276127":"#962424"):"black"}} disabled={selected}><h1>{option[2]}</h1></button>
+                    <button onClick={this.handleClick} style={{backgroundColor: selected && (currTirth===option[2]?"#95E8A3":"#fb7070"), color: selected && (currTirth===option[2]?"#276127":"#962424")}} disabled={selected}><h1>{option[2]}</h1></button>
                 </div>
                 <div className="flex-item">
-                    <button onClick={this.handleClick} style={{backgroundColor: selected?(currTirth===option[3]?"#95E8A3":"#fb7070"):"white", color: selected?(currTirth===option[3]?"#276127":"#962424"):"black"}} disabled={selected}><h1>{option[3]}</h1></button>
+                    <button onClick={this.handleClick} style={{backgroundColor: selected && (currTirth===option[3]?"#95E8A3":"#fb7070"), color: selected && (currTirth===option[3]?"#276127":"#962424")}} disabled={selected}><h1>{option[3]}</h1></button>
                 </div>
             </div>
         </>
